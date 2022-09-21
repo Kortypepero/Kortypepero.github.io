@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Design</title>
+
+ <style>
+  
+  * {box-sizing: border-box;
+  }
+
+  body, html {height: 100%;
+  }
+
+  .bg-image {background-image: url("bgimage.jpg");
+             width: 100%;
+             height: 100vh;
+             position: absolute;
+             top: 0;
+             left: 0;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             z-index: -1;
+             -webkit-filter: blur(10px);
+             filter: blur(5px);
+  }
+
+  .text {background-color: rgba(0,0,0, 0.2);
+         color: white;
+         font-weight: bold;
+         width: 100%;
+         text-align: center;
+         text-shadow: .05em, .05em, .05em rgba(0,0,0,.3);
+  }
+
+  p {color: white;
+     font-size: 20px;
+     text-shadow: .05em, .05em, .05em rgba(0, 0, 0, 0.3);
+     font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .container {display: flex;
+              flex-direction: row;
+              width: 100%;
+              height: 100vh;
+  }
+
+  .leftside, .rightside {flex: 1;                       
+  }
+
+  img {width: 65px;
+       height: 65px;
+       text-shadow: .05em, .05em, .05em rgba(0,0,0,.3);
+       margin-top: 3em;
+  }
+
+  a {text-decoration: none;
+  }
+
+  .leftside {padding: 50px;
+  }
+
+  .rightside {position: relative;
+  }
+
+  h1 {font-size: 4em;
+      text-align: left;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  button {padding: 15px;
+          background-color: rgb(196, 102, 102);
+          border:none;
+  }
+
+  button:hover {background-color: rgb(221, 104, 104);
+  }
+
+  nav a {display: inline-block;
+         padding: 10px;
+  }
+
+  p {margin-bottom: 5em;
+  }
+
+  .left {margin-top: 5em;
+  }
+
+  .right {position: absolute;
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+  }
+
+  p {padding-right: 20px;
+  }
+
+  .image {width: auto;
+         height: 94%;
+  }
+
+  .right>a {text-decoration: none;
+            color: white;
+  }
+
+  .right>a:hover {text-decoration: underline;
+  }
+
+  .rightimage {height: 100%;
+               width: 100%;
+  }
+
+  .title {font-size: 80px;
+          text-shadow: .05em, .05em, .05em rgba(0,0,0,.10);       
+  }
+ 
+ </style>
+
+</head>
+<body>
+ <div class="bg-image"></div>
+ <div class="container">
+  <div class="leftside">
+   <div class="text"> 
+   <h1 class="title">Race Easy</h1>
+    <p>Hi, Welcome to Race Easy! This is a place for people all over the world
+        to create or join an event with less hassle or zero hassle at all. My goal 
+        is to give everyone a fair chance of deciding who can they battle with based on 
+        their location, car specifications, pot money and desired date and time.
+    </p>
+
+    <button type="button">MORE HERE</button>
+
+    </div>
+
+    <nav class="left">
+     <a href="https://www.facebook.com/Damnworthl3ss">
+      <img src="fb.png">  
+     </a>
+     <a href="https://www.facebook.com/Damnworthl3ss">
+      <img src="twitter.png">  
+     </a>
+     <a href="https://www.facebook.com/Damnworthl3ss">
+      <img src="ig.png">  
+     </a>
+     <a href="https://www.facebook.com/Damnworthl3ss">
+      <img src="discord.png">  
+     </a>  
+
+    </nav>    
+
+  </div>
+  
+  <div class="rightside">
+   <nav class="right">
+
+    <a href="">About</a>
+    <a href="">Contact Us</a>
+
+   </nav>
+   
+  <div class="rightimage">
+   <img class="image" src="s15vsr32.jpg"> 
+  </div>
+
+  </div>
+
+ </div>
+
+</body>
+
+</html>
